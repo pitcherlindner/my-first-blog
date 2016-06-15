@@ -22,11 +22,10 @@ class Post(models.Model):
         return self.title
 
 
-"""class Comment(models.Model):
+class Comment(models.Model):
 	text = models.TextField()
 	created_date = models.DateTimeField(
 		default=timezone.now)
 		
 	def create(self):
 	    self.save()
-"""
