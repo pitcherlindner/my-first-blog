@@ -25,7 +25,7 @@ SECRET_KEY = '86t!zrxbcxg49v(-q*8s)0od2x62+2h!kl-no_*f)!veus$e)4'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['pitcher.pythonanywhere.com']
 
 
 # Application definition
