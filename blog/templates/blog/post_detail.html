@@ -10,15 +10,12 @@
         {% if user.is_authenticated %}
         	<a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
         {% endif %}
-<<<<<<< HEAD
         <a class="btn btn-default" href="{% url 'post_comment' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
         <h1>{{ post.title }}</h1>
         <p>{{ post.text|linebreaks }}</p>
         <p>Comments</p>
         <p>{{ comment.text }}</p>
-=======
         <h1>{{ post.title }}</h1>
         <p>{{ post.text|linebreaks }}</p>
->>>>>>> b27bc22ac63317afb2c324d45f15a64202dade54
     </div>
 {% endblock %}

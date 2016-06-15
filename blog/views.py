@@ -1,15 +1,12 @@
 from django.shortcuts import render
 from django.utils import timezone
 from .models import Post
-<<<<<<< HEAD
-from .models import Comment
+#from .models import Comment
 from django.shortcuts import render, get_object_or_404
 from .forms import PostForm
-from .forms import CommentForm
-=======
+#from .forms import CommentForm
 from django.shortcuts import render, get_object_or_404
 from .forms import PostForm
->>>>>>> b27bc22ac63317afb2c324d45f15a64202dade54
 from django.shortcuts import redirect
 
 # Create your views here.
@@ -46,7 +43,6 @@ def post_edit(request, pk):
             return redirect('post_detail', pk=post.pk)
     else:
         form = PostForm(instance=post)
-<<<<<<< HEAD
     return render(request, 'blog/post_edit.html', {'form': form})
     
 def post_comment(request):
@@ -61,6 +57,4 @@ def post_comment(request):
 	else:
 	    form = CommentForm(instance=comment)
 	return render(request, 'blog/post_comment.html', {'form': form})
-=======
-    return render(request, 'blog/post_edit.html', {'form': form})
->>>>>>> b27bc22ac63317afb2c324d45f15a64202dade54
+    #return render(request, 'blog/post_edit.html', {'form': form})

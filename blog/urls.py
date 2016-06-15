@@ -6,8 +6,5 @@ urlpatterns = [
     url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail'),
 	url(r'^post/new/$', views.post_new, name='post_new'),
 	url(r'^post/(?P<pk>\d+)/edit/$', views.post_edit, name='post_edit'),
-<<<<<<< HEAD
 	url(r'^post/(?P<pk>\d+)/comment/$', views.post_comment, name='post_comment'),
-=======
->>>>>>> b27bc22ac63317afb2c324d45f15a64202dade54
 ]
