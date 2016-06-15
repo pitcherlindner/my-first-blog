@@ -21,6 +21,7 @@ class Post(models.Model):
     def __str__(self):
         return self.title
 
+<<<<<<< HEAD
 class Comment(models.Model):
 	text = models.TextField()
 	created_date = models.DateTimeField(
@@ -28,3 +29,5 @@ class Comment(models.Model):
 		
 	def create(self):
 	    self.save()
+=======
+>>>>>>> b27bc22ac63317afb2c324d45f15a64202dade54
